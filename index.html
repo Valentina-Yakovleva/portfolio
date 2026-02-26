@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Начинающий интернет-маркетолог</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f6f7fb;
+color:#1a1a1a;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1150px;
+margin:auto;
+}
+
+/* HERO */
+
+.hero{
+padding:100px 0 70px;
+display:grid;
+grid-template-columns:1.2fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.badge{
+display:inline-block;
+padding:6px 14px;
+background:#eef2ff;
+color:#5b5bd6;
+border-radius:30px;
+font-size:14px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:46px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+color:#555;
+margin-bottom:30px;
+font-size:18px;
+}
+
+.photo{
+width:100%;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:14px 26px;
+border-radius:12px;
+background:linear-gradient(135deg,#6c63ff,#8b5cf6);
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+margin-top:10px;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+/* SECTIONS */
+
+section{
+padding:40px 0;
+}
+
+h2{
+font-size:32px;
+margin-bottom:30px;
+}
+
+/* CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+padding:24px;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* PROJECTS */
+
+.project-card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+transition:0.3s;
+
+display:flex;
+flex-direction:column;
+height:100%;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+}
+
+.project-card img{
+width:100%;
+display:block;
+height:220px;
+object-fit:cover;
+}
+
+.project-content{
+padding:20px;
+
+display:flex;
+flex-direction:column;
+flex:1;
+}
+
+.project-content h3{
+margin-bottom:10px;
+}
+
+.project-content p{
+flex:1;
+margin-bottom:15px;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+}
+
+.project-card img{
+width:100%;
+display:block;
+}
+
+.project-content{
+padding:30px;
+}
+
+/* EDUCATION SLIDER */
+
+.slider{
+position:relative;
+overflow:hidden;
+border-radius:20px;
+}
+
+.slides{
+display:flex;
+transition:0.5s;
+}
+
+.slide{
+min-width:100%;
+text-align:center;
+}
+
+.slide img{
+width:100%;
+border-radius:14px;
+margin-bottom:10px;
+}
+
+.nav{
+position:absolute;
+top:45%;
+transform:translateY(-50%);
+background:rgba(0,0,0,0.4);
+border:none;
+color:white;
+font-size:26px;
+width:38px;
+height:38px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.prev{left:10px;}
+.next{right:10px;}
+
+/* CTA */
+
+.cta{
+background:linear-gradient(135deg,#6c63ff,#8b5cf6);
+border-radius:24px;
+padding:50px;
+text-align:center;
+color:white;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px 0;
+color:#777;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+
+    .hero{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .hero div:first-child{
+        flex:1;
+        text-align:left;
+    }
+
+    .hero div:last-child{
+        flex:0 0 120px; /* фиксированная ширина фото */
+    }
+
+    .photo{
+        width:100%;
+        max-width:120px;
+        border-radius:20px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="container hero">
+
+<div>
+<div class="badge">Открыта к стажировке</div>
+
+<h1>Начинающий интернет-маркетолог</h1>
+
+<p>
+Осваиваю digital-маркетинг на практике: аналитика, реклама, сайты и дизайн.<br>
+Ищу позицию помощника маркетолога или стажёра.<br>
+Готова быстро учиться и брать задачи в работу.
+</p>
+
+<a class="btn" href="#contact">Связаться со мной</a>
+</div>
+
+<div>
+<img class="photo" src="photo.jpg">
+</div>
+
+</div>
+
+
+<section>
+<div class="container">
+
+<h2>Обо мне</h2>
+
+<p>
+Я начинающий специалист в интернет-маркетинге с техническим образованием (Прикладная информатика)
+и профессиональной переподготовкой по маркетингу.
+
+<br><br>Умею работать с рекламой, аналитикой и сайтами, понимаю базовые принципы продвижения бизнеса,
+воронку продаж и путь клиента.
+
+<br><br>Быстро обучаюсь новым инструментам, ответственна и заинтересована в развитии в сфере маркетинга.
+</p>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<h2>Навыки</h2>
+
+<div class="grid">
+
+<div class="card">📈 Интернет-маркетинг: CTR, ROMI, CAC</div>
+<div class="card">📊 Яндекс.Метрика, цели, аналитика</div>
+<div class="card">💻 Яндекс.Директ, объявления</div>
+<div class="card">🌐 Создание сайтов (Tilda), HTML, CSS, JS</div>
+<div class="card">🎨 UX/UI дизайн (Figma)</div>
+<div class="card">📑 Excel и анализ данных</div>
+<div class="card">🎬 Монтаж видеороликов в Adobe Premiere Pro 2023</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<h2>Проекты</h2>
+
+<div class="grid">
+
+<!-- PROJECT 1 -->
+
+<div class="project-card">
+<img src="project1.png">
+
+<div class="project-content">
+<h3>Landing page — Cosmetics Store</h3>
+
+<p>Дизайн лендинга интернет-магазина косметики.</p>
+
+<a class="btn" target="_blank"
+href="https://www.behance.net/gallery/176901965/Landing-page-Cosmetics-Landing-page-Cosmetics-store">
+Смотреть проект
+</a>
+</div>
+</div>
+
+
+<!-- PROJECT 2 -->
+
+<div class="project-card">
+<img src="project2.png">
+
+<div class="project-content">
+<h3>Landing page — Makeup Artist</h3>
+
+<p>Дизайн и верстка лендинга для визажиста.</p>
+
+<a class="btn" target="_blank"
+href="https://www.behance.net/gallery/176901487/Landing-page-makeup-artist-purple-landing-page">
+Смотреть проект
+</a>
+</div>
+</div>
+
+
+<!-- PROJECT 3 -->
+
+<div class="project-card">
+<img src="project3.png">
+
+<div class="project-content">
+<h3>Маркетинговый кейс</h3>
+
+<p>
+<ul>
+<li>Анализ рынка и целевой аудитории</li>
+<li>Создание сайта на Tilda</li>
+<li>Подключение Яндекс Метрики</li>
+<li>Настройка рекламных кампаний</li>
+<li>Разработка контент-стратегии</li>
+<li>Построение воронки продаж</li>
+</ul>
+</p>
+
+<a class="btn" href="https://drive.google.com/file/d/1oV_xN0l1QRcbXyqnL7glDIbaItRo8Mkz/view?usp=drive_link" target="_blank">Смотреть кейс</a>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<h2>Образование</h2>
+<p>
+🎓 Бакалавр — Прикладная информатика<br>
+🎓 Профессиональная переподготовка — Интернет-маркетолог<br>
+🎓 Стажировка UX/UI — ITCode
+</p>
+
+<div class="slider">
+
+<button class="nav prev" onclick="moveSlide(-1)">‹</button>
+
+<div class="slides" id="slides">
+
+<div class="slide">
+<img src="diplom1.jpg">
+<p>Бакалавр — Прикладная информатика</p>
+</div>
+
+<div class="slide">
+<img src="diplom2.jpg">
+<p>Профессиональная переподготовка — Интернет-маркетолог</p>
+</div>
+
+<div class="slide">
+<img src="diplom3.jpg">
+<p>Стажировка UX/UI — ITCode</p>
+</div>
+
+</div>
+
+<button class="nav next" onclick="moveSlide(1)">›</button>
+
+</div>
+
+</div>
+</section>
+
+
+<section>
+<div class="container">
+
+<div class="cta">
+
+<h2>Готова начать карьеру в маркетинге</h2>
+
+<p>
+Рассматриваю стажировку или позицию помощника маркетолога.
+Готова быстро обучаться, выполнять задачи и развиваться в профессии.
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="contact">
+<div class="container">
+
+<h2>Контакты</h2>
+
+<p>📩 Email: yakovleva_valya2002@mail.ru</p>
+<p>📱 Telegram: @Valen_Salem</p>
+<p>📞 Телефон: +7 987 046-69-05</p>
+
+<a class="btn" href="mailto:yakovleva_valya2002@mail.ru">Написать</a>
+
+</div>
+</section>
+
+
+<footer>
+<p>© Павловская Валентина <br> 2026г.</p>
+</footer>
+
+
+<script>
+
+let index = 0;
+
+function moveSlide(step){
+
+const slides=document.getElementById('slides');
+const total=slides.children.length;
+
+index+=step;
+
+if(index<0) index=total-1;
+if(index>=total) index=0;
+
+slides.style.transform=`translateX(-${index*100}%)`;
+
+}
+
+</script>
+
+</body>
+</html>
